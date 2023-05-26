@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avor.homebookkeepingdesktopdemo.viewsControllers.MainFormController">
+  <children>
+    <MenuBar prefHeight="28.0" prefWidth="800.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Сервисы">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Валюты">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Помощь">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TabPane layoutY="28.0" prefHeight="470.0" prefWidth="790.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Счета">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="790.0">
+              <children>
+                <Pane prefHeight="243.0" prefWidth="790.0">
+                  <children>
+                    <TableView layoutX="7.0" layoutY="7.0" prefHeight="345.0" prefWidth="800.0">
+                      <columns>
+                        <TableColumn prefWidth="45.600006103515625" resizable="false" text="N" />
+                        <TableColumn prefWidth="135.99993896484375" text="Счет" />
+                        <TableColumn prefWidth="115.0" text="Расход" />
+                        <TableColumn prefWidth="115.0" text="Доход" />
+                        <TableColumn prefWidth="114.4000244140625" text="Прочие операции" />
+                        <TableColumn prefWidth="115.0" text="Баланс" />
+                        <TableColumn prefWidth="158.4000244140625" text="Примечание" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </Pane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Расходы">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <Tab text="Доходы">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <Tab text="Вклады">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Button layoutX="16.0" layoutY="439.0" mnemonicParsing="false" onAction="#addObject" prefHeight="40.0" prefWidth="100.0" text="Добавить" />
+    <Button layoutX="143.0" layoutY="438.0" mnemonicParsing="false" onAction="#changeObject" prefHeight="40.0" prefWidth="100.0" text="Изменить" />
+    <Button layoutX="278.0" layoutY="438.0" mnemonicParsing="false" onAction="#deleteObject" prefHeight="40.0" prefWidth="100.0" text="Удалить" />
+  </children>
+</AnchorPane>
