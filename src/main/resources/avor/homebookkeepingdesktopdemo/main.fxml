@@ -40,15 +40,15 @@
               <children>
                 <Pane prefHeight="243.0" prefWidth="790.0">
                   <children>
-                    <TableView layoutX="7.0" layoutY="7.0" prefHeight="345.0" prefWidth="800.0">
+                    <TableView fx:id="tableView" layoutX="7.0" layoutY="7.0" prefHeight="345.0" prefWidth="800.0">
                       <columns>
-                        <TableColumn prefWidth="45.600006103515625" resizable="false" text="N" />
-                        <TableColumn prefWidth="135.99993896484375" text="Счет" />
-                        <TableColumn prefWidth="115.0" text="Расход" />
-                        <TableColumn prefWidth="115.0" text="Доход" />
-                        <TableColumn prefWidth="114.4000244140625" text="Прочие операции" />
-                        <TableColumn prefWidth="115.0" text="Баланс" />
-                        <TableColumn prefWidth="158.4000244140625" text="Примечание" />
+                        <TableColumn fx:id="columnN" prefWidth="45.600006103515625" resizable="false" text="N" />
+                        <TableColumn fx:id="columnAccount" prefWidth="135.99993896484375" text="Счет" />
+                        <TableColumn fx:id="columnExpense" prefWidth="115.0" text="Расход" />
+                        <TableColumn fx:id="columnIncome" prefWidth="115.0" text="Доход" />
+                        <TableColumn fx:id="columnOtherOperations" prefWidth="114.4000244140625" text="Прочие операции" />
+                        <TableColumn fx:id="columnBalance" prefWidth="115.0" text="Баланс" />
+                        <TableColumn fx:id="columnNote" prefWidth="158.4000244140625" text="Примечание" />
                       </columns>
                     </TableView>
                   </children>
