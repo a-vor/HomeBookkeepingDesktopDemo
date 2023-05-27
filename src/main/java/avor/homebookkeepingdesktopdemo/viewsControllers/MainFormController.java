@@ -1,50 +1,48 @@
 package avor.homebookkeepingdesktopdemo.viewsControllers;
 
-import avor.homebookkeepingdesktopdemo.models.ScoresTableModel;
-import avor.homebookkeepingdesktopdemo.models.Transaction;
+import avor.homebookkeepingdesktopdemo.controllers.TransactionScoresController;
+import avor.homebookkeepingdesktopdemo.models.TransactionScores;
+import avor.homebookkeepingdesktopdemo.models.User;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
-
-import java.net.URL;
-import java.util.ResourceBundle;
 
 public class MainFormController {
+    User user;
     @FXML
     private Label welcomeText;
 
     @FXML
-    private TableView<Transaction> tableView;
+    private TableView<TransactionScores> tableView;
     @FXML
-    private TableColumn<Transaction, Integer> columnN;
+    private TableColumn<TransactionScores, Integer> columnN;
     @FXML
-    private TableColumn<Transaction, String> columnAccount;
+    private TableColumn<TransactionScores, String> columnAccount;
     @FXML
-    private TableColumn<Transaction, Double> columnExpense;
+    private TableColumn<TransactionScores, Double> columnExpense;
     @FXML
-    private TableColumn<Transaction, Double> columnIncome;
+    private TableColumn<TransactionScores, Double> columnIncome;
     @FXML
-    private TableColumn<Transaction, Double> columnOtherOperations;
+    private TableColumn<TransactionScores, Double> columnOtherOperations;
     @FXML
-    private TableColumn<Transaction, Double> columnBalance;
+    private TableColumn<TransactionScores, Double> columnBalance;
     @FXML
-    private TableColumn<Transaction, String> columnNote;
+    private TableColumn<TransactionScores, String> columnNote;
 
     public void initialize() {
         // Создаем коллекцию ObservableList для хранения данных таблицы
-        ObservableList<Transaction> transactions = FXCollections.observableArrayList();
-
+        ObservableList<TransactionScores> transactions = FXCollections.observableArrayList();
+//        System.out.println("ksdjf: " + user.toString());
+        new TransactionScoresController().getAllScoresByUserId(user);
         // Добавляем данные в коллекцию
-        transactions.add(new Transaction(1, "Счет 1", 100.0, 0.0, 0.0, 100.0, "Примечание 1"));
-        transactions.add(new Transaction(2, "Счет 2", 0.0, 50.0, 0.0, 50.0, "Примечание 2"));
+        transactions.add(new TransactionScores(1, "Счет 1", 100.0, 0.0, 0.0, 100.0, "Примечание 1"));
+        transactions.add(new TransactionScores(2, "Счет 2", 0.0, 50.0, 0.0, 50.0, "Примечание 2"));
         columnN.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getN()).asObject());
         columnAccount.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getAccount()));
         columnExpense.setCellValueFactory(cellData -> new SimpleDoubleProperty(cellData.getValue().getExpense()).asObject());
@@ -70,4 +68,7 @@ public class MainFormController {
         System.out.println("Удалить!");
     }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

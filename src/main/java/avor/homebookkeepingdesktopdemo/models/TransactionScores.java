@@ -2,7 +2,7 @@ package avor.homebookkeepingdesktopdemo.models;
 
 import javafx.beans.property.*;
 
-public class Transaction {
+public class TransactionScores {
     private IntegerProperty n;
     private StringProperty account;
     private DoubleProperty expense;
@@ -11,7 +11,7 @@ public class Transaction {
     private DoubleProperty balance;
     private StringProperty note;
 
-    public Transaction(int n, String account, double expense, double income, double otherOperations, double balance, String note) {
+    public TransactionScores(int n, String account, double expense, double income, double otherOperations, double balance, String note) {
         this.n = new SimpleIntegerProperty(n);
         this.account = new SimpleStringProperty(account);
         this.expense = new SimpleDoubleProperty(expense);

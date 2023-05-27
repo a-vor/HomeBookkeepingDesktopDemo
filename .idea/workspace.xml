@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db42303d-7ba6-44b8-901d-df333e9accd6" name="Changes" comment="init project with last modifies">
-      <change afterPath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/models/ScoresTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/models/Transaction.java" afterDir="false" />
+    <list default="true" id="db42303d-7ba6-44b8-901d-df333e9accd6" name="Changes" comment="score table method to full">
+      <change afterPath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/controllers/TablesTransactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/controllers/TransactionScoresController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/models/ScoresTableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/models/TransactionScores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/viewsControllers/MainFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/avor/homebookkeepingdesktopdemo/viewsControllers/MainFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/avor/homebookkeepingdesktopdemo/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/avor/homebookkeepingdesktopdemo/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685082866495</updated>
-      <workItem from="1685082867521" duration="3793000" />
+      <workItem from="1685082867521" duration="7488000" />
     </task>
     <task id="LOCAL-00001" summary="init project with last modifies">
       <created>1685085049678</created>
@@ -73,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685085049678</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="score table method to full">
+      <created>1685086985455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685086985455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +91,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init project with last modifies" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project with last modifies" />
+    <MESSAGE value="score table method to full" />
+    <option name="LAST_COMMIT_MESSAGE" value="score table method to full" />
   </component>
 </project>
